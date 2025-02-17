@@ -422,24 +422,52 @@ canvas {
 
 .container-projects {
   padding: 3rem 15rem;
+  position: relative;
 }
 
 .projects-header {
   font-size: 5rem;
   color: #fff;
   text-align: center;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: moveHeaderProjects 2.5s forwards;
+}
+
+@keyframes moveHeaderProjects {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 1;
+    top: 15%;
+  }
 }
 
 .card-flex {
+  margin-top: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  opacity: 0;
   margin-bottom: 2rem;
-  z-index: 1;
+  animation: fadeInCards 1s forwards 2s;
+}
+
+@keyframes fadeInCards {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container-projects img {
@@ -522,6 +550,7 @@ canvas {
 }
 
 .projects-links {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
