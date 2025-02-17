@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ========================================================================================================== */
+/* ============================================ CSS RESET =================================================== */
+/* ========================================================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  /* background-color: #000; */
+  color: #333;
+  /* background-image: url('../img/index-background.jpg');
+  background-size: cover;
+  background-position: center; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* ========================================================================================================== */
+/* =============================================== HOME ===================================================== */
+/* ========================================================================================================== */
+
+canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.loading-text {
+  position: absolute;
+  font-size: 5rem;
+  color: #fff;
+  display: block;
+  animation:  fadeOutText 2.5s forwards;
+}
+
+@keyframes fadeOutText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  opacity: 0;
+  animation: fadeInMenu 1s forwards 2s;
+}
+
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-buttons,
+.hire-me-btn,
+.btn-form,
+.project-links {
+  align-items: center;
+  background-image: linear-gradient(144deg, #fff, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 2px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-buttons:active,
+.menu-buttons:hover,
+.hire-me-btn:active,
+.hire-me-btn:hover,
+.btn-form:active,
+.btn-form:hover,
+.project-links:active,
+.project-links:hover {
+  outline: 0;
+}
+
+.menu-buttons span,
+.hire-me-btn span,
+.btn-form span,
+.project-links span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.menu-buttons:hover span,
+.hire-me-btn:hover span,
+.btn-form:hover span,
+.project-links:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .menu-buttons,
+  .hire-me-btn,
+  .btn-form,
+  .project-links {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/* ========================================================================================================== */
+/* ============================================= ABOUT ME =================================================== */
+/* ========================================================================================================== */
+
+.container-about,
+.container-contact {
+  padding:  6rem 25rem;
+  position: relative;
+}
+
+.container-about-page {
+  opacity: 0;
+  animation: fadeinContentAbout 1s forwards 2s;
+}
+
+@keyframes fadeinContentAbout {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-text-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3rem; 
+  margin-left: -12rem;
+  font-size: 5rem;
+  color: #fff;
+  display: block;
+  z-index: 1;
+  animation:  fadeOutTextAbout 2.5s forwards;
+}
+
+@keyframes fadeOutTextAbout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.image {
+  height: 600px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+.border-div {
+  position: absolute;
+  height: 603px;
+  width: 403px;
+  background: linear-gradient(144deg, #fff, #5B42F3 50%,#00DDEB);
+  border-radius: 10px;
+  z-index: -1;
+  top: 0;
+}
+
+.about-btns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-btn {
+  width: 10rem;
+  height: 2rem;
+  text-decoration: none;
+  color: #fff;
+  background: rgb(5, 6, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 300ms all;
+}
+
+.about-btn.focus:focus {
+  background: linear-gradient(144deg, #fff, #5B42F3 50%,#00DDEB);
+}
+
+.container-about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.who-am-i,
+.dev-background,
+.passion {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.7rem;
+  margin: 0 0 1rem 0;
+}
+
+.container-about-right-text-who-am-i,
+.container-about-right-text-dev-background,
+.container-about-right-text-passion {
+  color: #fff;
+  font-weight: 400;
+  font-size: inherit;
+  margin: 0 0 1.5rem 0;
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ========================================================================================================== */
+/* ============================================ CONTACT ME ================================================== */
+/* ========================================================================================================== */
+
+.container-contact-form-flex {
+  margin-top: 3rem;
+}
+
+.contact-form {
+  max-width: 100%;
+  padding: 2rem 15rem;
+}
+
+.email-flex,
+.subject-flex,
+.textarea-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.contact-form label {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+.contact-form input {
+  height: 3rem;
+  font-size: 1rem;
+  padding:  1rem;
+  color: #fff;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: outline 0.1s ease-in;
+}
+
+.contact-form textarea {
+  height: 6rem;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: outline 0.1s ease-in;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #fff;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.links a,
+.list-technologies-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: linear-gradient(144deg, #fff, #5B42F3 50%,#00DDEB);
+  padding: 0.5rem;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: 300ms all;
+} 
+
+.links a:hover,
+.list-technologies-btn a:hover {
+  background: rgb(5, 6, 45);
+}
+
+.contact-me-text {
+  position: absolute;
+  font-size: 5rem;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-top: -3rem; 
+  margin-left: -16rem;
+  animation: fadeOutWithDots 1s forwards 4s;
+}
+
+@keyframes fadeOutWithDots {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.container-contact-form-flex {
+  opacity: 0;
+  animation: fadeFormAnimation 4s forwards 5s;
+}
+
+@keyframes fadeFormAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ========================================================================================================== */
+/* ============================================ MY PROJECTS ================================================= */
+/* ========================================================================================================== */
+
+.container-projects {
+  padding: 3rem 15rem;
+}
+
+.projects-header {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.container-projects img {
+  width: 22rem;
+  height: 12rem;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  width: 22rem;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.card-inner {
+  width: 22rem;
+  height: 12rem;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: -100%;
+  background: linear-gradient(144deg, rgba(255, 255, 255, 0.2), rgba(91, 66, 243, 0.2) 50%, rgba(0, 221, 235, 0.2));
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover .card-inner {
+  bottom: 0;
+  opacity: 1;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+.technologies-used {
+  padding: 0.5rem;
+}
+
+.tehchonologies-used-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.list-technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.list-technologies-ticket,
+.list-technologies-trackcalorie,
+.list-technologies-random {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  gap: 2rem;
+}
+
+.list-technologies-trackcalorie {
+  margin-bottom: 1.7rem;
+}
+
+.techologies {
+  display: block;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.list-technologies-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+
+
+
+
