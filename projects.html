@@ -4,153 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="./css/style-animations.css">
+  <link rel="stylesheet" href="./css/style-media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="./js/index.js" defer></script>
+  <script src="./js/swiper.js"></script>
   <script src="https://kit.fontawesome.com/535c69aa83.js" crossorigin="anonymous" defer></script>
-  <title>Martin Dev | Projects</title>
+  
+  <title>Martin Dev | My Projects</title>
 </head>
   <body>
     <canvas></canvas>
     <div class="container-projects">
-      <h1 class="projects-header">My projects so far</h1>
-      <div class="card-flex">
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/nephilim-project.png" alt="nephilim-project">
-          </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies">
-                <div class="list-technologies-flex">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- CSS</h3>
-                  <h3 class="techologies">- JavaScript</h3>
+      <div class="container-projects-flex">
+        <div class="container-projects-flex-top">
+          <h1 class="projects-header">My projects so far</h1>
+        </div>
+        <div class="container-projects-flex-bottom">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card">
+                <div class="card-inside">
+                  <img src="./img/nephilim-project.png" alt="nephilim-project">
+                </div>
+                <div class="card-content">
+                  <h2 class="project-title">Static website</h2>
+                  <p class="description-project">This is a static website built for the guild Nephilim which is from a video game called World of Warcarft. The point of this website is when people apply to the guild, i made an apply form within this website so people who want to apply can use this form instead of talking direcly to the officers of the guild which it is time consuming. The website is still up and running and it's been using constanly by the guild. <a href="https://www.nephilim.online/" class="link-for-nephilim" target="_blank">click here to see the site.</a></p>
+                  <h2 class="technologies-used-title">Technologies used:</h2>
+                  <p class="technology">- HTML</p>
+                  <p class="technology">- CSS</p>
+                  <p class="technology">- JavaScript</p>
+                  <a href="https://github.com/9ne/Nephilim-final" target="_blank" class="gitbut-nephilim">- Github link</a>
                 </div>
               </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/Nephilim-final" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+              <div class="swiper-slide card">
+                <div class="card-inside">
+                  <img src="./img/flixx-movie-webapp-project.png" alt="flixx-movie-web-app">
+                </div>
+                <div class="card-content">
+                  <h2 class="project-title">Web Application</h2>
+                  <p class="description-project">This sleek and lightweight web app is built with Vanilla JavaScript, HTML, and CSS, leveraging the powerful The Movie Database (TMDB) API. Users can search for movies, view detailed information, and explore trending films with a clean and responsive design. The app dynamically fetches movie data, including posters, ratings, and overviews, ensuring an engaging browsing experience. With a user-friendly interface and smooth performance.</p>
+                  <h2 class="technologies-used-title">Technologies used:</h2>
+                  <p class="technology">- HTML</p>
+                  <p class="technology">- CSS</p>
+                  <p class="technology">- JavaScript</p>
+                  <a href="https://github.com/9ne/flixx-movie-web-app" target="_blank">- Github link</a>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-inside">
+                  <img src="./img/ticketblaster-project.jpg" alt="ticketblaster-project">
+                </div>
+                <div class="card-content">
+                  <h2 class="project-title">Fullstack Web Application</h2>
+                  <p class="description-project">TicketBlaster is a full-stack web app designed for seamless ticket sales for events, concerts, and comedy shows. It features a secure login and registration system, allowing users to browse events, purchase tickets, and manage their bookings effortlessly. Admins have a dedicated dashboard to add, edit, and manage events, track sales, and oversee user activity. Built for performance and scalability, TicketBlaster ensures a smooth experience for both event organizers and attendees.</p>
+                  <h2 class="technologies-used-title">Technologies used:</h2>
+                  <div class="technologies-used-flex">
+                    <div class="technologies-used-flex-left">
+                      <p class="technology">- HTML</p>
+                      <p class="technology">- CSS</p>
+                      <p class="technology">- React.js</p>
+                    </div>
+                    <div class="technologies-used-flex-right">
+                      <p class="technology">- Context.js</p>
+                      <p class="technology">- Node.js</p>
+                      <p class="technology">- Rest APIs</p>
+                    </div>
+                    <div class="technologies-used-flex-right">
+                      <p class="technology">- Micro Services</p>
+                      <p class="technology">- Express.js</p>
+                      <p class="technology">- Jsonwebtoken(JWT)</p>
+                    </div>
+                  </div>
+                  <a href="https://github.com/9ne/TicketBlaster-app" target="_blank">- Github link</a>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-inside">
+                  <img src="./img/trackcalorie-project.png" alt="trackcalorie-project">
+                </div>
+                <div class="card-content">
+                  <h2 class="project-title">Web Application</h2>
+                  <p class="description-project">Users can easily add, edit, or delete meals, with real-time updates reflecting their calorie progress. The app is designed to be lightweight and fast, ensuring a smooth experience without unnecessary complexity. With its modular OOP structure, TrackCalorie is easy to maintain and expand with new features. Whether for weight management or general health tracking, it provides a hassle-free solution for monitoring daily nutrition.</p>
+                  <h2 class="technologies-used-title">Technologies used:</h2>
+                  <div class="technologies-used-flex">
+                    <div class="technologies-used-flex-left">
+                      <p class="technology">- HTML</p>
+                      <p class="technology">- CSS</p>
+                    </div>
+                    <div class="technologies-used-flex-right">
+                      <p class="technology">- OOP JavaScript</p>
+                      <p class="technology">- Webpack</p>
+                    </div>
+                  </div>
+                  <a href="https://github.com/9ne/trackcalorie-webpack-app" target="_blank" class="track-calorie">- Github link</a>
+                  <a href="https://trackcalorie-webpack-webapp.netlify.app/" target="_blank" class="track-calorie">- Deployed - Netlify link</a>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-inside">
+                  <img src="./img/randomideas-web-app.png" alt="randomideas-web-app">
+                </div>
+                <div class="card-content">
+                  <h2 class="project-title">Full Stack Web Application</h2>
+                  <p class="description-project">RandomIdeas is a dynamic, user-friendly full stack web application designed to empower individuals and teams to share, organize, and collaborate on creative ideas. Whether you're brainstorming for a project, planning an event, or simply jotting down thoughts, RandomIdeas provides a centralized platform for capturing and refining ideas in real-time. The application is built with a modern tech stack, ensuring scalability, responsiveness.</p>
+                  <h2 class="technologies-used-title">Technologies used:</h2>
+                  <div class="technologies-used-flex">
+                    <div class="technologies-used-flex-left">
+                      <p class="technology">- HTML</p>
+                      <p class="technology">- CSS</p>
+                      <p class="technology">- OOP JavaScript</p>
+                    </div>
+                    <div class="technologies-used-flex-right">
+                      <p class="technology">- Webpack</p>
+                      <p class="technology">- Node.js</p>
+                      <p class="technology">- MongoDB</p>
+                    </div>
+                  </div>
+                  <a href="https://github.com/9ne/RandomIdeas-FullStack-WebApplication" target="_blank">- Github link</a>
+                </div>
               </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/portfoliowebsite-project.png" alt="portfoliowebsite-project">
+          <div class="container-projects-bottom">
+            <a href="./about.html" class="project-links"><span>about me</span></a>
+            <a href="./contact.html" class="project-links"><span>contact me</span></a>
           </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies">
-                <div class="list-technologies-flex">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- CSS</h3>
-                  <h3 class="techologies">- JavaScript</h3>
-                </div>
-              </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/portfolio-website" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/ticketblaster-project.jpg" alt="ticketblaster-project">
-          </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies-ticket">
-                <div class="list-technologies-left">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- CSS</h3>
-                  <h3 class="techologies">- JavaScript</h3>
-                </div>
-                <div class="list-technologies-right">
-                  <h3 class="techologies">- Node.js</h3>
-                  <h3 class="techologies">- React.js</h3>
-                  <h3 class="techologies">- MongoDB</h3>
-                </div>
-              </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/TicketBlaster-app" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/flixx-movie-webapp-project.png" alt="flixx-movie-webapp-project">
-          </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies">
-                <div class="list-technologies-flex">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- CSS</h3>
-                  <h3 class="techologies">- JavaScript</h3>
-                </div>
-              </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/flixx-movie-web-app" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/trackcalorie-project.png" alt="trackcalorie-project">
-          </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies-trackcalorie">
-                <div class="list-technologies-left">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- Bootstrap</h3>
-                </div>
-                <div class="list-technologies-right">
-                  <h3 class="techologies">- JavaScript</h3>
-                  <h3 class="techologies">- Webpack</h3>
-                </div> 
-              </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/trackcalorie-webpack-app" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-main">
-            <img src="./img/randomideas-web-app.png" alt="randomideas-web-app">
-          </div>
-          <div class="card-inner">
-            <div class="technologies-used">
-              <h2 class="tehchonologies-used-title">technologies used:</h2>
-              <div class="list-technologies-random">
-                <div class="list-technologies-left">
-                  <h3 class="techologies">- HTML</h3>
-                  <h3 class="techologies">- CSS</h3>
-                  <h3 class="techologies">- JavaScript</h3>
-                </div>
-                <div class="list-technologies-right">
-                  <h3 class="techologies">- Webpack</h3>
-                  <h3 class="techologies">- Node.js</h3>
-                  <h3 class="techologies">- MongoDB</h3>
-                </div>
-              </div>
-              <div class="list-technologies-btn">
-                <a href="https://github.com/9ne/RandomIdeas-FullStack-WebApplication" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-links">
-          <a href="./about.html" class="project-links"><span>about me</span></a>
-          <a href="./contact.html" class="project-links"><span>contact me</span></a>
         </div>
       </div>
     </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
