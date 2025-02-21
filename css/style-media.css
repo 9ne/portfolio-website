@@ -1,4 +1,348 @@
+/* 1025px */
+@media (max-width: 1025px) {
+  /* About page */
+  .container-content-about {
+    width: 55rem;
+    position: relative;
+  }
 
+  .container-about-left .image {
+    height: 500px;
+    width: 300px;
+  }
+
+  .border-div {
+    height: 500px;
+    width: 300px;
+    top: 0.1rem;
+    left: 0.1rem;
+  }
+
+  .who-am-i,
+  .dev-background,
+  .passion {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .container-about-right-text-who-am-i,
+  .container-about-right-text-dev-background,
+  .container-about-right-text-passion {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0 0 1.2rem 0;
+  }
+
+  .container-about-flex {
+    margin-bottom: 3rem;
+  }
+  
+  /* Projects page */
+  @keyframes headerProjects {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -450%);
+      opacity: 1;
+    }
+  }
+
+  .swiper {
+    width: 60rem;
+  }
+
+  .container-projects-flex-top .projects-header {
+    font-size: 3.5rem;
+  }
+
+  .card-inside img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card-content .project-title,
+  .card-content .technologies-used-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-content .description-project {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-content .technology {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* 961px */
+@media (max-width: 961px) {
+  .swiper-slide.card {
+    padding: 2.5rem 3.5rem;
+  }
+}
+
+/* 641px */
+@media (max-width: 641px) {
+  /* Index page */
+  .loading-text {
+    font-size: 3.5rem;
+  }
+  /* About page */
+  .container-about-page {
+    margin: 2.5rem;
+  }
+
+  .loading-text-about {
+    font-size: 3.5rem;
+    margin-top: -3rem; 
+    margin-left: -8rem;
+  }
+
+  .container-about-flex {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .container-about-left .image {
+    height: 400px;
+    width: 220px;
+  }
+
+  .border-div {
+    height: 400px;
+    width: 220px;
+    top: 7.2rem;
+    left: 0.1rem;
+  }
+
+  .who-am-i,
+  .dev-background,
+  .passion {
+    font-size: 1.4rem;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .container-about-right-text-who-am-i,
+  .container-about-right-text-dev-background,
+  .container-about-right-text-passion {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  /* Projects page */
+  @keyframes headerProjects {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -630%);
+      opacity: 1;
+    }
+  }
+
+  .swiper {
+    width: 35rem;
+  }
+
+  .container-projects-flex-top .projects-header {
+    font-size: 3rem;
+    margin-right: -10rem;
+  }
+
+  .swiper-slide.card {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .card-content {
+    margin: 0 2rem;
+  }
+
+  .card-inside img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .card-content .project-title,
+  .card-content .technologies-used-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-content .description-project {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-content .technology {
+    font-size: 0.9rem;
+  }
+
+  /* Contact me page */
+  .contact-me-text {
+    font-size: 3.5rem;
+    margin-top: -3rem; 
+    margin-left: -10rem;
+  }
+
+  .contact-form {
+    width: 30rem;
+  }
+
+  .email-flex,
+  .subject-flex,
+  .textarea-flex {
+    gap: 0.5rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .contact-form label {
+    font-size: 1.2rem;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* 481px */
+@media (max-width: 481px) {
+  /* About page */
+  .container-about-page {
+    margin: 2.5rem;
+  }
+
+  .loading-text-about {
+    font-size: 3.5rem;
+    margin-top: -3rem; 
+    margin-left: -8rem;
+  }
+
+  .container-about-flex {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .container-about-left .image {
+    height: 300px;
+    width: 150px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  }
+
+  .border-div {
+    display: none;
+  }
+
+  .who-am-i,
+  .dev-background,
+  .passion {
+    font-size: 1.3rem;
+  }
+
+  .container-about-right-text-who-am-i,
+  .container-about-right-text-dev-background,
+  .container-about-right-text-passion {
+    font-size: 0.8rem;
+  }
+
+  /* Projects page */
+  @keyframes headerProjects {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -700%);
+      opacity: 1;
+    }
+  }
+
+  .swiper {
+    width: 28rem;
+  }
+
+  .container-projects-flex-top .projects-header {
+    font-size: 2.5rem;
+    margin-right: -10rem;
+  }
+
+  .swiper-slide.card {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .card-content {
+    margin: 0 1.5rem;
+  }
+
+  .technologies-used-flex {
+    gap: 0.1rem;
+    justify-content: space-between;
+  }
+
+  .card-inside img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .card-content .project-title,
+  .card-content .technologies-used-title {
+    font-size: 1.3rem;
+  }
+
+  .card-content .description-project {
+    font-size: 0.8rem;
+  }
+
+  .card-content .technology {
+    font-size: 0.8rem;
+  }
+  
+  .github-link {
+    font-size: 0.8rem;
+  }
+  
+  .track-calorie {
+    font-size: 0.8rem;
+  }
+
+  /* Contact me page */
+  .contact-me-text {
+    font-size: 3.5rem;
+    margin-top: -3rem; 
+    margin-left: -12rem;
+  }
+
+  .contact-form {
+    width: 24rem;
+  }
+
+  .email-flex,
+  .subject-flex,
+  .textarea-flex {
+    gap: 0.5rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .contact-form label {
+    font-size: 1.2rem;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 1.2rem;
+  }
+}
 
 
 /* Buttons */

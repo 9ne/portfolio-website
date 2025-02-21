@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const dotInterval = setInterval(() => {
     dotCount = (dotCount + 1) % (maxDots + 1);
-    contactText.textContent = `form loading${".".repeat(dotCount)}`;
+    contactText.textContent = `Form loading${".".repeat(dotCount)}`;
   }, 1000);
 
   setTimeout(() => {

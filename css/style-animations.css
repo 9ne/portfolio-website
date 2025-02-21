@@ -97,3 +97,33 @@
   }
 }
 
+.projects-header {
+  animation: headerProjects 2.5s forwards;
+}
+
+@keyframes headerProjects {
+  0% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -400%);
+    opacity: 1;
+  }
+}
+
+.container-projects-flex-bottom {
+  animation: fadeInContentProjects 1s forwards 2s;
+}
+
+@keyframes fadeInContentProjects {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

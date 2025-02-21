@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper = new Swiper(swiperContainer, {
     direction: "horizontal",
-    loop: true,
+    loop: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
